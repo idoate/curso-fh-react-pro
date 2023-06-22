@@ -11,3 +11,7 @@ export type CounterAction = { type: 'increaseBy', payload: { value: number} }|
 export const doReset= (): CounterAction => ({ //Esto significa que el return es un objeto
         type: 'reset'
 })
+export const doIncreaseBy= (value: number): CounterAction => ({
+        type: 'increaseBy',
+        payload: {value: value}
+})
